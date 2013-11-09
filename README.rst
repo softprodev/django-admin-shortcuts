@@ -45,7 +45,6 @@ How do i use it?
                     'url_name': 'admin:shop_order_changelist',
                     'title': 'Products',
                     'count_new': 'project.utils.count_new_orders',
-                    'has_perms': 'project.utils.has_perms_to_orders',
                 },
             ]
         },
@@ -60,8 +59,6 @@ Where ...
     * optional ``title`` is the title of the shortcut
     * optional ``count`` and ``count_new`` are paths to a function inside your project that returns something interesting (like a count of all products or a count of all pending orders).
       The function can optionally take one argument, ``request``, which is the current Django ``HttpRequest`` object.
-    * optional ``has_perms`` is a path to a function inside your project that returns information about shortcut visibility on the django admin homepage.
-      Like above, this function can optionally take one argument ``request`` as well.
     * optional ``open_new_window`` sets whether the link should open in a new window (default is False)
     * optional ``class`` is the CSS class to be added to the anchor element (if you don't specify one, magical ponies will do it for you)
 
@@ -152,4 +149,10 @@ Notes
 -----
 
 * Icons grabbed from Pixeden.com
+
+
+
+.. image:: https://d2weczhvl823v0.cloudfront.net/alesdotio/django-admin-shortcuts/trend.png
+   :alt: Bitdeli badge
+   :target: https://bitdeli.com/free
 
